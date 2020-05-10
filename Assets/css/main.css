@@ -1,0 +1,90 @@
+/*Configs. de CSS para a página principal*/
+/*custom fonts*/
+@font-face {
+    font-family: 'NK57 Monospace Cd Rg';
+    src: url('/Assets/fonts/NK57MonospaceCdRg-Regular.woff2') format('woff2'),
+        url('/Assets/fonts/NK57MonospaceCdRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*estilização de links*/
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+/*/////////////////////////////////////*/
+body {
+    margin: 0;
+    padding: 80px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-family: 'NK57 Monospace Cd Rg';
+}
+/*/////////////////////////////////////*/
+.container {
+    display: flex;
+    width: 1500px;
+    height: 800px;
+    flex-direction: column;
+}
+.upperbar {
+    width: 1500px;
+    height: 30px;
+    background-color: white;
+}
+.menutop {
+    width: 1498px;
+    height: 45px;
+    border: solid 1px white;
+}
+.menuleft {
+    float: left;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.menuright{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+.left {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+}
+/*/////////////////////////////////////*/
+ul {
+    margin: auto;
+    user-select: none;
+}
+li{
+    float: left;
+    list-style: none;
+    margin-left: 10px;    
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+/*/////////////////////////////////////*/
+.frame {
+    width: 1498px;
+    height: 900px;
+    border-bottom: solid 1px white;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    display: flex;
+    flex-direction: column;
+}

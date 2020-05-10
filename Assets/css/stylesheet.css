@@ -1,0 +1,123 @@
+/* Estilos gerais em index.
+    O arquivo deve ser dividido em várias partes, dentro de um arquivo CSS.
+    Cada parte será nomeada de acordo com a área de atuação, mas puxando elementos
+    gerais. */
+/*/////////////////////////////////////*/
+/*custom fonts*/
+@font-face {
+    font-family: 'NK57 Monospace Cd Rg';
+    src: url('/Assets/fonts/NK57MonospaceCdRg-Regular.woff2') format('woff2'),
+        url('/Assets/fonts/NK57MonospaceCdRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*/////////////////////////////////////*/
+/*estilização de links*/
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+}
+/*/////////////////////////////////////*/
+body {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    display: flex;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+/*/////////////////////////////////////*/
+.loginform {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formarea {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.table {
+    height: 20px;
+    width: 397px;
+    text-align: center;
+    background-color: transparent;
+    border: solid 1px white;
+    color: white;
+    outline: none;
+    font-family: 'NK57 Monospace Cd Rg';
+}
+.btns {
+    width: 400px;
+    display: flex;
+    flex: 1;
+}
+.OK {
+    width: 100px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color:  rgb(39, 39, 39);
+    height: 40px;
+    cursor: pointer;
+    font-family: 'NK57 Monospace Cd Rg';
+}
+.REG {
+    width: 290px;
+    margin-left: 10px;
+    border: solid 1px white;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+    font-family: 'NK57 Monospace Cd Rg';
+}
+.disclaimer {
+    width: 400px;
+    background-color: white;
+    color:  rgb(39, 39, 39);
+    font-family: 'NK57 Monospace Cd Rg';
+    margin-top: 20px;
+    text-align: center;
+}
+/*/////////////////////////////////////*/
+/*---EFEITOS---*/
+.table:hover, .table:focus{
+    background-color: white;
+    color:  rgb(39, 39, 39);
+}
+.table:hover::placeholder, .table:focus::placeholder {
+    color: white;
+}
+input:focus::placeholder, input:active::placeholder{
+    color: transparent;
+}
+/*/////////////////////////////////////*/
+/*---placeholder---*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /*Firefox*/
+}
+:-ms-input-placeholder { /*IE 10-11*/
+    color: white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+/*/////////////////////////////////////*/
+.regra {
+    width: 400px;
+    font-family: 'NK57 Monospace Cd Rg';
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+
