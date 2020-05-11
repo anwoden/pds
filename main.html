@@ -8,9 +8,10 @@
         <link type="text/css" rel="stylesheet" href="/Assets/css/main.css">
         <script type="text/javascript" src="/Assets/java/script.js">
         //Caso haja necessidade de usar algum script fora do arquivo JS, esse é o espaço.
+        
         </script>
     </head>
-    <body>
+    <body onload="currentTime()">
         <div class="container">
             <div class="upperbar"></div>
             <div class="menutop">
@@ -29,6 +30,12 @@
                                 <li>LOGOUT</li>
                             </ul>
                         </nav>
+                    </div>
+                    <div class="right">
+                        <div class="hello">
+                            <a>Hello, username</a> <!--Implementar PHP com nome do usuário após o login-->
+                        </div>
+                        <div id="clock"></div>
                     </div>
                 </div>
             </div>

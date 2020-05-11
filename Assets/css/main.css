@@ -26,6 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'NK57 Monospace Cd Rg';
+    overflow-y: hidden;
 }
 /*/////////////////////////////////////*/
 .container {
@@ -50,17 +51,18 @@ body {
     height: 40px;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 .menuright{
     display: flex;
     flex: 1;
     flex-direction: row;
 }
+/*/////////////////////////////////////*/
 .left {
     display: flex;
     flex: 2;
     align-items: center;
-    width: 400px;
     height: 40px;
 }
 /*/////////////////////////////////////*/
@@ -75,7 +77,28 @@ li{
     margin-right: 10px;
     cursor: pointer;
 }
-
+/*/////////////////////////////////////*/
+.right {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
+    height: 40px;
+    padding-right: 40px;
+    user-select: none;
+}
+.hello {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+/*/////////////////////////////////////*/
+#clock {
+    color: white;
+    font-size: 12px;
+    align-items: center;
+}
 
 
 /*/////////////////////////////////////*/
