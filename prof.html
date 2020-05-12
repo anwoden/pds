@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
-        <title>PDS.V1</title>
+        <title>PDS.V1 | PROFILE</title>
         <link rel="icon" href="/Assets/img/logo/favicon.png">
         <link type="text/css" rel="stylesheet" href="/Assets/css/main.css">
-        <script type="text/javascript" src="/Assets/java/script.js">
+        <script type="text/javascript" src="/Assets/java/clock.js">
         //Caso haja necessidade de usar algum script fora do arquivo JS, esse é o espaço.
         
         </script>
@@ -41,6 +41,15 @@
             </div>
             <div class="frame">
                 <div class="fleft">
+                    <div class="content">
+                        <div class="server" id="servdisplay">
+                           <a class="s-status">█ </a><a class="sinfo">SERVER STATUS:</a><br>
+                           <a class="u-status">█ </a> <a class="sinfo">USER CONNECTION:</a><br>
+                           <a class="p-status">█ </a> <a class="sinfo">PING:</a>
+                           <br>
+                           <input class="infobtn" type="submit" value="CHECK">
+                        </div>
+                    </div>
                     <div class="contentp">
                         <div class="userpic">
                             <img src="/Assets/img/users/userpic.svg" width="150px">
@@ -49,7 +58,7 @@
                             <a>CHANGE AVATAR</a><img src="/Assets/img/users/editicon.svg" width="15px">
                         </div>
                     </div>
-                    <div class="contentp">
+                    <div class="contentp">                
                         <div class="userinfo">
                             <!--Cada informação em um campo de formulário de LABEL
                             username;
@@ -57,9 +66,9 @@
                             (essas informações serão puxadas do banco de dados MYSql de usuário)
                             mudar senha;
                             -->
-                        </div>
-                    </div>
-                </div>
+                        </div>                
+                    </div>                    
+                </div>                
                 <div class="fright">
                      <div class="pdata">
                         <!--Aqui vão aparecer em blocos diferentes, como módulos, as informações

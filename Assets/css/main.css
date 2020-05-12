@@ -66,11 +66,11 @@ body {
     height: 40px;
 }
 /*/////////////////////////////////////*/
-ul {
+.left ul {
     margin: auto;
     user-select: none;
 }
-li{
+.left li{
     float: left;
     list-style: none;
     margin-left: 10px;    
@@ -119,11 +119,61 @@ li{
     flex-direction: column;
 }
 .content {
-    width: 300px;
-    height: 50px;
+    width: 280px;
+    height: fit-content;
+    padding: 10px;
     border-bottom: solid 1px white;
+    color: white;
+    justify-content: start;
+    align-items: center;
+    display: flex;
 }
-
+.server, .resinfo {
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.s-status, .u-status, .p-status {
+    color: white;
+}
+.infobtn {
+    border: none;
+    font-family: 'NK57 Monospace Cd Rg';
+    outline: none;
+    background-color: white;
+    color: #272727;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.dcontent {
+    width: 280px;
+    height: fit-content;
+    color: white;
+    justify-content: start;
+    align-items: center;
+    display: flex;    
+}
+.userdb{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.addnew {
+    margin-left: 30px;
+}
+.dbases {
+    width: 280px;
+    font-size: 15px;
+    height: 540px;
+    overflow: auto;
+}
+.dbases ul {
+    list-style: square;
+    margin-left: 10px;
+}
+.dbases li {
+    margin-bottom: 5px;
+}
 .fright {
     height: 733px;
     width: 1198px;

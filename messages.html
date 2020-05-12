@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
-        <title>PDS.V1</title>
+        <title>PDS.V1 | MESSAGES</title>
         <link rel="icon" href="/Assets/img/logo/favicon.png">
         <link type="text/css" rel="stylesheet" href="/Assets/css/main.css">
-        <script type="text/javascript" src="/Assets/java/script.js">
+        <script type="text/javascript" src="/Assets/java/clock.js">
         //Caso haja necessidade de usar algum script fora do arquivo JS, esse é o espaço.
         
         </script>
@@ -42,13 +42,37 @@
             <div class="frame">
                 <div class="fleft">
                     <div class="content">
+                        <div class="server" id="servdisplay">
+                           <a class="s-status">█ </a><a class="sinfo">SERVER STATUS:</a><br>
+                           <a class="u-status">█ </a> <a class="sinfo">USER CONNECTION:</a><br>
+                           <a class="p-status">█ </a> <a class="sinfo">PING:</a>
+                           <br>
+                           <input class="infobtn" type="submit" value="CHECK">
+                        </div>
 
                     </div>
                     <div class="content">
-
+                        <div class="resinfo">
+                            <a>USERNAME</a><br>
+                            <a>EMAIL</a><br>
+                            <input class="infobtn" type="submit" value="MORE" onclick="location.href='/prof.html'">
+                        </div>
                     </div>
-                    <div class="content">
-
+                    <div class="dcontent">
+                        <div class="dbases" id="dbaselist">
+                            <div class="userdb">
+                                <a>USER DATABASES:</a>
+                            </div>
+                            <!--<ul class="dbaselist">
+                                <li><a href="#">D.B.#1</a></li>
+                                <li><a href="#">D.B.#2</a></li>
+                                <li><a href="#">D.B.#3</a></li>
+                                <li><a href="#">D.B.#4</a></li>
+                            </ul>-->
+                            <div class="addnew">
+                                <input class="infobtn" type="submit" value="ADD NEW" onclick="location.href='newdb.html'">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="fright">
