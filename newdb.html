@@ -52,32 +52,23 @@
                     </div>
                 </div>
                 <div class="fright">
-                    <div class="logo">
-                        <img src='/Assets/img/logo/pds-frame.svg' width="200">
-                    </div>
-                    <div class="about">
-                        <a class="titletxt">PERSONAL DATABASE SYSTEM</a>
-                        <p>==========================================================================================</p>
-                        <a>Personal Database System é um sistema criado para que o 
-                            usuário possa catalogar seu banco de dados pessoal no servidor, 
-                            como notas, ideias ou projetos, coleções e o que mais você puder 
-                            imaginar, com o conteúdo criptografado.
+                     <div class="ndata">
+                         <form method="POST">
+                             <label>DATABASE NAME:</label><br>
+                             <input class="table" type="text" id="dbname">
+                             <label>COLLATION:</label>
+                             <a>utf8_general_ci</a><br><br>
+                             <button class="add"><span>add database</span></button>
+                         </form>                         
+                     </div>
+                     <div class="expl">
+                        <a class="titletxt">CRIAR D.B.</a><br><br>
+                        <a>================================</a><br><br>
+                        <a>1. Crie o banco de dados com nome minúsculo e sem acentos.
+                            Caso se esqueça, não tem problema: a página ajusta automaticamente
+                            o nome para o padrão, mas podem ocorrer erros.
                         </a>
                         <br><br>
-                        <a>Esse projeto é um trabalho independente, feito por uma equipe numerosa
-                            de um desenvolvedor só em fase de estudo :)
-                        </a>
-                        <br><br>
-                        <a>O código HTML é integrado com funções em PHP que se conectam ao servidor
-                            MYSql para gerenciamento de informações enviadas pelo usuário. As informações
-                            armazenadas são criptografadas de maneira segura, e não são lidas por nenhum outro
-                            usuário ou administrador do sistema.
-                        </a>
-                        <br><br>
-                        <a>Espero que esse projeto seja útil.</a>
-                        <br><br>
-                        <a>ANDRÉ BRAGA</a>
-                            
                     </div>
                 </div>
             </div>
