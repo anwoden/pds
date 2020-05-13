@@ -10,6 +10,7 @@
         //Caso haja necessidade de usar algum script fora do arquivo JS, esse é o espaço.
         
         </script>
+        <script type="text/javascript" src="/Assets/java/script.js"></script>
     </head>
     <body onload="currentTime()">
         <div class="container">
@@ -22,11 +23,11 @@
                     <div class="left">
                         <nav>
                             <ul>
-                                <li><a href="/main.html">HOME</a></li>
-                                <li><a href="newdb.html">NEW D.B.</a></li>
-                                <li><a href="/mfiles.html">MY FILES</a></li>
-                                <li><a href="prof.html">PROFILE</a></li>
-                                <li><a href="/messages.html">MESSAGES</a></li>
+                                <li><a href="/main.php">HOME</a></li>
+                                <li><a href="newdb.php">NEW D.B.</a></li>
+                                <li><a href="/mfiles.php">MY FILES</a></li>
+                                <li><a href="prof.php">PROFILE</a></li>
+                                <li><a href="/messages.php">MESSAGES</a></li>
                                 <li>LOGOUT</li>
                             </ul>
                         </nav>
@@ -42,13 +43,33 @@
             <div class="frame">
                 <div class="fleft">
                     <div class="content">
-                        <div class="server" id="servdisplay">
-                           <a class="s-status">█ </a><a class="sinfo">SERVER STATUS:</a><br>
-                           <a class="u-status">█ </a> <a class="sinfo">USER CONNECTION:</a><br>
-                           <a class="p-status">█ </a> <a class="sinfo">PING:</a>
-                           <br>
-                           <input class="infobtn" type="submit" value="CHECK">
-                        </div>
+                    <div class="server" id="servdisplay">
+                           <a class="s-status" id="sstatus">█ </a><a class="sinfo">SERVER STATUS:</a><a id="sanswer">
+                           <?php
+                            $conectado = @ fsockopen('localhost', 80, $numeroDoErro, $stringDoErro, 10); // Este último é o timeout, em segundos
+                            if ($conectado) {
+                                print ' ONLINE';
+                            } else {
+                                print ' OFFLINE';
+                            } 
+                            ?>
+                           </a><br>
+                           <a class="u-status" id="ustatus">█ </a> <a class="sinfo">USER CONNECTION:</a><a id="uanswer">
+                           <?php
+                            $conectado = @ fsockopen('localhost', 80, $numeroDoErro, $stringDoErro, 10); // Este último é o timeout, em segundos
+                            if ($conectado) {
+                                print ' ONLINE';
+                            } else {
+                                print ' OFFLINE';
+                            } 
+                            ?>
+                           </a><br>
+                           <!--<a class="p-status">█ </a> <a class="sinfo">PING:</a><a id="panswer"></a><a>
+                           
+                           </a>
+                           <br>-->
+                           <input class="infobtn" type="submit" value="CHECK" onclick="pingTest()">
+                        </div> 
                     </div>
                     <div class="contentp">
                         <div class="userpic">

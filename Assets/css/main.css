@@ -16,6 +16,7 @@ a:link, a:visited, a:active {
 
 /*/////////////////////////////////////*/
 body {
+    user-select: none;
     margin: 0;
     padding: 80px;
     background-color: rgb(39, 39, 39);
@@ -144,6 +145,11 @@ body {
     color: #272727;
     margin-top: 5px;
     cursor: pointer;
+}
+#uanswer, #sanswer, #panswer {
+    display: none;
+    float: right;
+    margin-left: 5px;
 }
 .dcontent {
     width: 280px;
