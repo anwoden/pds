@@ -51,6 +51,7 @@ body {
     border: solid 1px white;
     color: white;
     outline: none;
+    margin-bottom: 10px;
     font-family: 'NK57 Monospace Cd Rg';
 }
 .btns {
