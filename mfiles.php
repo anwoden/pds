@@ -78,7 +78,7 @@
                         <div class="resinfo">
                             <a>USERNAME</a><br>
                             <a>EMAIL</a><br>
-                            <input class="infobtn" type="submit" value="MORE" onclick="location.href='/prof.html'">
+                            <input class="infobtn" type="submit" value="MORE" onclick="location.href='/prof.php'">
                         </div>
                     </div>
                     <div class="dcontent">
@@ -93,14 +93,14 @@
                                 <li><a href="#">D.B.#4</a></li>
                             </ul>-->
                             <div class="addnew">
-                                <input class="infobtn" type="submit" value="ADD NEW" onclick="location.href='newdb.html'">
+                                <input class="infobtn" type="submit" value="ADD NEW" onclick="location.href='newdb.php'">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="fright">
                      <div class="files">
-                        <div class="dbs" onclick="location.href = '/newdb.html'">
+                        <div class="dbs" onclick="location.href = '/newdb.php'">
                              <img src="/Assets/img/dbfile/nfile.svg" width="50">
                              <br>
                              <a>new d.b.</a>

@@ -77,7 +77,7 @@
                         <div class="resinfo">
                             <a>USERNAME</a><br>
                             <a>EMAIL</a><br>
-                            <input class="infobtn" type="submit" value="MORE" onclick="location.href='/prof.html'">
+                            <input class="infobtn" type="submit" value="MORE" onclick="location.href='/prof.php'">
                         </div>
                     </div>    
                     <div class="dcontent">
