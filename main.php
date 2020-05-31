@@ -1,6 +1,10 @@
 <?php
-include("config.php");
 session_start();
+if (!$_SESSION['username']){
+    header("location: index.php");
+}
+
+include("config.php");
 
 ?>
 <!DOCTYPE html>
@@ -40,12 +44,11 @@ session_start();
                     <div class="right">
                         <div class="hello">
                             <a>Hello, <?php 
-                            if(isset($_SESSION['username'])){
-                                echo $_SESSION['username'];
-                            } else {
-                                echo "user";
-                            }
-                            
+                              if(isset($_SESSION['username'])){
+                                echo strtoupper($_SESSION['username']);
+                                } else {
+                                    echo "user";
+                                }                            
                             ?>
                             </a> <!--Implementar PHP com nome do usuário após o login-->
                         </div>
@@ -86,7 +89,7 @@ session_start();
                     </div>
                     <div class="content">
                         <div class="resinfo">
-                            <a>USERNAME</a><br>
+                            <a><?php echo strtoupper($_SESSION['username']); ?></a><br>
                             <a>EMAIL</a><br>
                             <input class="infobtn" type="submit" value="MORE" onclick="location.href='/prof.php'">
                         </div>

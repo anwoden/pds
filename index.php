@@ -1,9 +1,9 @@
 <?php
-include("config.php");
 session_start();
+include("config.php");
 
-$username = $password = "";
-$username_err = $password_err = "";
+
+
 
 ?>
 <!DOCTYPE html>
