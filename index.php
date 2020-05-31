@@ -2,11 +2,6 @@
 include("config.php");
 session_start();
 
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: main.php");
-    exit;
-}
-
 $username = $password = "";
 $username_err = $password_err = "";
 
@@ -28,7 +23,7 @@ $username_err = $password_err = "";
         <div class="loginform">
             <div class="logo"><img src="Assets/img/logo/PDSlogo2.svg" width="400"></div>
             <div class="formarea">
-                <form method="POST" action="index.php">
+                <form method="POST" action="loginsys.php">
                     <input class="table" type="text" placeholder="USERNAME" name="login" id="login">
                     <input class="table" type="password" placeholder="PASSWORD" name="pword" id="pword">
                     <div class="btns">

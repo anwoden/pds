@@ -1,3 +1,8 @@
+<?php
+include("config.php");
+session_start();
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,13 +35,20 @@
                                 <li><a href="/mfiles.php">MY FILES</a></li>
                                 <li><a href="prof.php">PROFILE</a></li>
                                 <li><a href="/messages.php">MESSAGES</a></li>
-                                <li>LOGOUT</li>
+                                <li><a href="logout.php">LOGOUT</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="right">
                         <div class="hello">
-                            <a>Hello, username</a> <!--Implementar PHP com nome do usuário após o login-->
+                            <a>Hello,  <?php 
+                            if(isset($_SESSION['username'])){
+                                echo $_SESSION['username'];
+                            } else {
+                                echo "user";
+                            }
+                            
+                            ?></a> <!--Implementar PHP com nome do usuário após o login-->
                         </div>
                         <div id="clock"></div>
                     </div>
